@@ -3,60 +3,75 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <link href="styles/main.css" type="text/css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="styles/main.css">
+        <script src="https://kit.fontawesome.com/6297588aba.js" crossorigin="anonymous"></script>
         <title>Ohmyfood!</title>
     </head>
 <body>
     <header>
-        <img src="images/logo/ohmyfood@2x.svg" alt="logo ohmyfood">
+        <img src="images/logo/ohmyfood@2x.svg" alt="logo ohmyfood" class="logo__header">
     </header>
     <nav>
-        <input type="search" placeholder="Paris, Belleville">
+        <div class="search-input">
+            <i class="fas fa-map-marker-alt"></i><input type="text" placeholder="Paris, Belleville" class="input">
+        </div>
+        <div class="search-input__text">
             <h1>Réservez le menu qui vous convient</h1>
             <p>Découvrez des restaurants d'exception, séléctionnés par nos soins</p>
-        <button>Explorez nos restaurants</button>
+            <button class="search-button">Explorez nos restaurants</button>
+        </div>
     </nav>
     <aside>
-        <h2>Fonctionnement</h2>
-            <h4>Choisissez un restaurant</h4>
-            <h4>Composez votre menu</h4>
-            <h4>Dégustez au restaurant</h4>
+        <div class="tuto">
+            <h2 class="tuto__title">Fonctionnement</h2>
+                <h4 class="tuto__byline">Choisissez un restaurant</h4>
+                <h4 class="tuto__byline">Composez votre menu</h4>
+                <h4 class="tuto__byline">Dégustez au restaurant</h4>
+        </div>
     </aside>
     <main>
-        <section>
+        <article>
             <h2>Restaurants</h2>
-            <a href="lapalettedugout.html" target="_blank">
-                <div class="restaurant">
-                    <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="lapalettedugout">
-                    <h4>La palette du goût</h4>
-                    <p>Ménilmontant</p>
-                </div>
-            </a>
-            <a href="lanoteenchantee.html" target="_blank">
-                <div class="restaurant">
-                    <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="lanoteenchantee">
-                    <h4>La note enchantée</h4>
-                    <p>Charonne</p>
-                </div>
-            </a>
-            <a href="alafrancaise.html" target="_blank">
-                <div class="restaurant">
-                    <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="alafrancaise">
-                    <h4>A la française</h4>
-                    <p>Cité Rouge</p>
-                </div>
-            </a>
-            <a href="ledelicedessens.html" target="_blank">
-                <div class="restaurant">
-                    <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="ledelicedessens">
-                    <h4>Le délice des sens</h4>
-                    <p>Folie-Méricourt</p>
-                </div>
-            </a>
-        </section>
+            <section class="restaurant">
+                <a href="lapalettedugout.html" target="_blank" class="section-restaurant__link">
+                    <div class="restaurant-preview">
+                        <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="lapalettedugout" class="restaurant__img">
+                        <h4 class="restaurant__title">La palette du goût</h4>
+                        <p class="restaurant__location">Ménilmontant</p>
+                    </div>
+                </a>
+            </section>
+            <section class="restaurant">
+                <a href="lanoteenchantee.html" target="_blank">
+                    <div class="restaurant-preview">
+                        <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="lanoteenchantee" class="restaurant__img">
+                        <h4 class="restaurant__title">La note enchantée</h4>
+                        <p class="restaurant__location">Charonne</p>
+                    </div>
+                </a>
+            </section>
+            <section class="restaurant">
+                <a href="alafrancaise.html" target="_blank">
+                    <div class="restaurant-preview">
+                        <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="alafrancaise" class="restaurant__img">
+                        <h4 class="restaurant__title">A la française</h4>
+                        <p class="restaurant__location">Cité Rouge</p>
+                    </div>
+                </a>
+            </section>
+            <section class="restaurant">
+                <a href="ledelicedessens.html" target="_blank">
+                    <div class="restaurant-preview">
+                        <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="ledelicedessens" class="restaurant__img">
+                        <h4 class="restaurant__title">Le délice des sens</h4>
+                        <p class="restaurant__location">Folie-Méricourt</p>
+                    </div>
+                </a>
+            </section>
+        </article>
     </main>
     <footer>
-        <img src="images/logo/ohmyfood@2x.svg" alt="logo ohmyfood">
+        <img src="images/logo/ohmyfood@2x.svg" alt="logo ohmyfood" class="logo__footer">
         <p>Proposer un restaurant</p>
         <p>Devenir partenaire</p>
         <p>Mentions légales</p>
