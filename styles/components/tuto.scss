@@ -1,0 +1,46 @@
+aside{
+    padding: 25px;
+}
+.tuto{
+    display: flex;
+    flex-direction: column;
+}
+.tuto__byline{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    border-radius: 15px;
+    background: lighten($grey, $amount: 2);
+    padding: 25px;
+    font-weight: 500;
+    box-shadow: 3px 3px 2px $grey;
+    margin: 0px;
+    cursor: pointer;
+
+    .fas{
+        margin-right: 30px;
+        font-size: 25px;
+        color: grey;
+        &:hover{
+            color: $purple;
+        }
+    }
+    h4{
+        margin:0px;
+    }
+}
+.tuto__circle
+{
+    position: relative;
+    top: 45px;
+    left: -8px;
+    background-color: $purple;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    text-align: center;
+    color: white;
+    padding: 3px;
+    margin: 0px;
+}

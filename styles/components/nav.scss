@@ -6,8 +6,9 @@
     justify-content: center;
     padding: 20px 0px 20px 0px;
     box-shadow: inset 0px 1px 3px grey;
+    margin: 0px;
 }
-.fas {
+.fa-map-marker-alt{
     display: flex;
     padding-right: 10px;
 }
@@ -20,28 +21,27 @@ input::-webkit-input-placeholder {
     font-size: 17px;
 }
 .search-input__text {
-    display: flex;
+    display: block;
+    text-align: center;
+    margin: 0px;
+    padding: 40px;
     background-color: lighten($grey, $amount: 3);
     flex-direction: column;
-    h1,p{
-        display: flex;
-        justify-content: center;
-    }
     p{
         color: lighten(#000000, $amount: 20);
-        font-weight: 200;
+        font-weight: 300;
     }
 }
 .search-button{
-    width: 50%;
     text-align: center;
+    font-size: 15px;
     border: none;
-    border-radius: 15px;
-    display: block;
-    padding: 10px;
-    margin: 20px;
+    border-radius: 25px;
     background: linear-gradient($magenta, $purple) ;
     color: white;
+    cursor: pointer;
+    padding: 15px 30px 15px 30px;;
+    margin: 20px;
 }
 
 
