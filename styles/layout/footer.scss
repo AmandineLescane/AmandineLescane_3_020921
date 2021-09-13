@@ -1,0 +1,23 @@
+footer{
+    background-color: darken($grey, $amount: 70);
+    color: white;
+    padding: 20px;
+
+    h3{
+        font-family: $font-title;
+        letter-spacing: 1px;
+        font-size: 25px;
+    }
+    .fas{
+        margin: 0%;
+        padding-right: 10px;
+    }
+    p{
+        margin: 0%;
+        padding-bottom: 10px;
+    }
+}
+.footer__byline{
+    display: flex;
+    flex-direction: row;
+}
