@@ -1,2 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px 0px 10px 0px;
+}
 
+* {
+  font-family: "roboto";
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+.search-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  background-color: #eeeeee;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px 0px 20px 0px;
+  -webkit-box-shadow: inset 0px 1px 3px grey;
+          box-shadow: inset 0px 1px 3px grey;
+  margin: 0px;
+}
+
+.fa-map-marker-alt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-right: 10px;
+}
+
+.input {
+  background-color: #eeeeee;
+  border: none;
+}
+
+input::-webkit-input-placeholder {
+  color: black;
+  font-size: 17px;
+}
+
+.search-input__text {
+  display: block;
+  text-align: center;
+  margin: 0px;
+  padding: 40px;
+  background-color: #f6f6f6;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.search-input__text p {
+  color: #333333;
+  font-weight: 300;
+}
+
+.search-button {
+  text-align: center;
+  font-size: 15px;
+  border: none;
+  border-radius: 25px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
+  color: white;
+  cursor: pointer;
+  padding: 15px 30px 15px 30px;
+  margin: 20px;
+}
+
+aside {
+  padding: 25px;
+}
+
+.tuto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.tuto__byline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border-radius: 15px;
+  background: #f3f3f3;
+  padding: 25px;
+  font-weight: 500;
+  -webkit-box-shadow: 3px 3px 2px #eeeeee;
+          box-shadow: 3px 3px 2px #eeeeee;
+  margin: 0px;
+  cursor: pointer;
+}
+
+.tuto__byline .fas {
+  margin-right: 30px;
+  font-size: 25px;
+  color: grey;
+}
+
+.tuto__byline .fas:hover {
+  color: #9356DC;
+}
+
+.tuto__byline h4 {
+  margin: 0px;
+}
+
+.tuto__circle {
+  position: relative;
+  top: 45px;
+  left: -8px;
+  background-color: #9356DC;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  text-align: center;
+  color: white;
+  padding: 3px;
+  margin: 0px;
+}
 /*# sourceMappingURL=main.css.map */
