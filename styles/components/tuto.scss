@@ -17,14 +17,13 @@ aside{
     box-shadow: 3px 3px 2px $grey;
     margin: 0px;
     cursor: pointer;
-
+    &:hover{
+        color: $purple;
+    }
     .fas{
         margin-right: 30px;
         font-size: 25px;
         color: grey;
-        &:hover{
-            color: $purple;
-        }
     }
     h4{
         margin:0px;
