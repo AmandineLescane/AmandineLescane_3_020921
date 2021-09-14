@@ -1,0 +1,75 @@
+.fa-arrow-left{
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    font-size: larger;
+    text-decoration: none;
+    color: black;
+}
+.menu__img{
+    width: 100%;
+    img{
+        width: 100%;
+        display: flex;
+    }
+}
+.main__menu{
+    border-radius: 45px 45px 0px 0px;
+    position: relative;
+    z-index: 1;
+    margin-top: -40px;
+    h2{
+        font-family: $font-title;
+    }
+    h3{
+        font-weight: 300;
+        text-decoration: underline $mint 3px;
+    }
+    button{
+        @include btn;
+        width: 300px;
+        margin-left:auto;
+        margin-right: auto;
+    }
+}
+h4{
+    margin: 0px 0px 5px 0px;
+    font-size: large;
+}
+p{
+    margin: 0px 0px 5px 0px;
+    font-weight: 300;
+}
+.starters__dishes{
+    background-color: white;
+    border-radius: 25px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 2px 2px 10px darken($grey, $amount: 10);
+    .starters__byline{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.maindishes__dishes{
+    background-color: white;
+    border-radius: 25px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 2px 2px 10px darken($grey, $amount: 10);
+    .maindishes__byline{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.desserts__dishes{
+    background-color: white;
+    border-radius: 25px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 2px 2px 10px darken($grey, $amount: 10);
+    .desserts__byline{
+        display: flex;
+        justify-content: space-between;
+    }
+}
