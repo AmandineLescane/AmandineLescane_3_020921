@@ -96,6 +96,17 @@ aside {
           flex-direction: column;
 }
 
+@media screen and (min-width: 940px) {
+  .tuto__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 .tuto__byline {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -136,7 +147,7 @@ aside {
 
 .tuto__circle {
   position: relative;
-  top: 45px;
+  top: 52px;
   left: -8px;
   background-color: #9356DC;
   width: 20px;
@@ -160,7 +171,7 @@ main {
   padding: 20px;
 }
 
-article {
+.restaurants {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -171,6 +182,32 @@ article {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (min-width: 740px) {
+  .restaurants {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.restaurant__bloc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+@media screen and (min-width: 740px) {
+  .restaurant__bloc {
+    margin: 15px;
+  }
 }
 
 .restaurant {
@@ -216,6 +253,12 @@ article {
   border-radius: 5px;
 }
 
+@media screen and (min-width: 740px) {
+  .restaurant__new {
+    right: 40px;
+  }
+}
+
 .fa-heart {
   position: absolute;
   right: 30px;
@@ -227,6 +270,12 @@ article {
 
 .fa-heart:hover {
   color: #9356DC;
+}
+
+@media screen and (min-width: 740px) {
+  .fa-heart {
+    right: 40px;
+  }
 }
 
 footer {
@@ -314,6 +363,14 @@ footer p {
   margin-right: auto;
 }
 
+@media screen and (min-width: 1150px) {
+  .main__menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 h4 {
   margin: 0px 0px 5px 0px;
   font-size: large;
@@ -342,6 +399,12 @@ p {
           justify-content: space-between;
 }
 
+@media screen and (min-width: 1150px) {
+  .starters__dishes {
+    width: 100%;
+  }
+}
+
 .maindishes__dishes {
   background-color: white;
   border-radius: 25px;
@@ -360,6 +423,12 @@ p {
           justify-content: space-between;
 }
 
+@media screen and (min-width: 1150px) {
+  .maindishes__dishes {
+    width: 100%;
+  }
+}
+
 .desserts__dishes {
   background-color: white;
   border-radius: 25px;
@@ -376,5 +445,28 @@ p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media screen and (min-width: 1150px) {
+  .desserts__dishes {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  .main__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
 }
 /*# sourceMappingURL=main.css.map */

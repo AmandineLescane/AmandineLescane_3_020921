@@ -5,6 +5,12 @@ aside{
     display: flex;
     flex-direction: column;
 }
+.tuto__content{
+    @media screen and (min-width:940px) {
+        display:flex;
+        justify-content: space-between;
+    }
+}
 .tuto__byline{
     display: flex;
     align-items: center;
@@ -32,7 +38,7 @@ aside{
 .tuto__circle
 {
     position: relative;
-    top: 45px;
+    top: 52px;
     left: -8px;
     background-color: $purple;
     width: 20px;
