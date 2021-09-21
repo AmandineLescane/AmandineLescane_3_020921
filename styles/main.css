@@ -18,6 +18,9 @@
 body {
   padding: 0px;
   margin: 0px;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .search-input {
@@ -101,9 +104,8 @@ aside {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 
@@ -179,9 +181,6 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 @media screen and (min-width: 740px) {
@@ -211,6 +210,7 @@ main {
 }
 
 .restaurant {
+  position: relative;
   border: none;
   border-radius: 25px;
   margin-bottom: 25px;
@@ -245,24 +245,18 @@ main {
 
 .restaurant__new {
   position: absolute;
-  right: 30px;
   margin-top: 20px;
+  right: 20px;
   background-color: #99E2D0;
   color: #278870;
   padding: 5px;
   border-radius: 5px;
 }
 
-@media screen and (min-width: 740px) {
-  .restaurant__new {
-    right: 40px;
-  }
-}
-
 .fa-heart {
   position: absolute;
-  right: 30px;
   margin-top: 220px;
+  right: 20px;
   font-size: x-large;
   cursor: pointer;
   color: #FF79DA;
@@ -270,12 +264,6 @@ main {
 
 .fa-heart:hover {
   color: #9356DC;
-}
-
-@media screen and (min-width: 740px) {
-  .fa-heart {
-    right: 40px;
-  }
 }
 
 footer {

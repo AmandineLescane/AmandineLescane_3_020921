@@ -6,9 +6,9 @@ aside{
     flex-direction: column;
 }
 .tuto__content{
-    @media screen and (min-width:940px) {
+    @media screen and (min-width:$responsivetuto) {
         display:flex;
-        justify-content: space-between;
+        justify-content: space-around;
     }
 }
 .tuto__byline{

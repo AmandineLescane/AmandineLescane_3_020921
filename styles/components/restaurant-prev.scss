@@ -7,8 +7,7 @@ main{
 .restaurants{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    @media screen and (min-width: 740px) {
+    @media screen and (min-width: $responsivepreview) {
         flex-direction: row;
     }
 }
@@ -16,11 +15,12 @@ main{
     display: flex;
     flex-direction: column;
     width: 100%;
-    @media screen and (min-width: 740px) {
+    @media screen and (min-width: $responsivepreview) {
         margin: 15px; 
     }
 }
 .restaurant{
+    position: relative;
     border: none;
     border-radius: 25px;
     margin-bottom: 25px;
@@ -48,27 +48,21 @@ main{
 }
 .restaurant__new{
     position: absolute;
-    right: 30px;
     margin-top: 20px;
+    right: 20px ;
     background-color: $mint;
     color: darken($mint, $amount: 40);
     padding: 5px;
     border-radius: 5px;
-    @media screen and (min-width: 740px) {
-        right: 40px; 
-    }
 }
 .fa-heart{
     position: absolute;
-    right: 30px;
     margin-top: 220px;
+    right: 20px;
     font-size:x-large;
     cursor: pointer;
     color: $magenta;
     &:hover{
         color: $purple;
-    }
-    @media screen and (min-width: 740px) {
-        right: 40px; 
     }
 }
