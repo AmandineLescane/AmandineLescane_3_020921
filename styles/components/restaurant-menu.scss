@@ -23,7 +23,8 @@
     }
     h3{
         font-weight: 300;
-        text-decoration: underline $mint 3px;
+        border-bottom: 3px solid $mint;
+        width: 40px;
     }
     button{
         @include btn;
@@ -91,4 +92,8 @@ p{
         flex-direction: row;        align-items: flex-start;
         justify-content:space-around;
     }
+}
+.restaurant__heart{
+    margin-top: 20px;
+    right: 50px;
 }

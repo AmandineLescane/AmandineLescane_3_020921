@@ -61,8 +61,17 @@ main{
     right: 20px;
     font-size:x-large;
     cursor: pointer;
-    color: $magenta;
     &:hover{
-        color: $purple;
+        color: transparent;
     }
+}
+.restaurant__heartfull{
+    color: transparent;
+    transition: cubic-bezier(.68, -0.55, .27, 1.55) 0.3s;
+    &:hover{
+        transform: scale(1.3);
+        background: linear-gradient($magenta, $purple);
+        -webkit-background: content-box;
+        -webkit-background-clip: text;
+    }    
 }
