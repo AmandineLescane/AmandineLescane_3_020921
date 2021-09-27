@@ -35,10 +35,6 @@ input::-webkit-input-placeholder {
 .search-button{
     @include btn;
     transition: cubic-bezier(1, 0, 0.18, 0.83) .3s;
-    &:hover{
-        opacity: 95%;
-        transform: scale(1.1);
-    }
 }
 
 
