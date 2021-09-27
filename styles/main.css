@@ -91,6 +91,8 @@ input::-webkit-input-placeholder {
   opacity: 95%;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+  -webkit-box-shadow: 1px 2px 5px black;
+          box-shadow: 1px 2px 5px black;
 }
 
 aside {
@@ -373,6 +375,14 @@ footer p {
   margin-right: auto;
 }
 
+.main__menu button:hover {
+  opacity: 95%;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: 1px 2px 5px black;
+          box-shadow: 1px 2px 5px black;
+}
+
 @media screen and (min-width: 1150px) {
   .main__menu {
     display: -webkit-box;
@@ -483,5 +493,131 @@ p {
 .restaurant__heart {
   margin-top: 20px;
   right: 50px;
+}
+
+.spinner {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  -webkit-animation: fadein 3s forwards;
+          animation: fadein 3s forwards;
+}
+
+@-webkit-keyframes fadein {
+  0% {
+    z-index: 10000;
+  }
+  99% {
+    z-index: 1000;
+    visibility: hidden;
+  }
+  100% {
+    z-index: -1000;
+    visibility: hidden;
+  }
+}
+
+@keyframes fadein {
+  0% {
+    z-index: 10000;
+  }
+  99% {
+    z-index: 1000;
+    visibility: hidden;
+  }
+  100% {
+    z-index: -1000;
+    visibility: hidden;
+  }
+}
+
+.spinner__oh {
+  color: #FF79DA;
+  font-size: 100px;
+  font-family: "Shrikhand";
+  -webkit-animation: slideinleft 3s cubic-bezier(1, -0.18, 0.25, 0.97);
+          animation: slideinleft 3s cubic-bezier(1, -0.18, 0.25, 0.97);
+}
+
+.spinner__my {
+  color: #99E2D0;
+  font-size: 100px;
+  font-family: "Shrikhand";
+  -webkit-animation: slideinright 3s cubic-bezier(1, -0.18, 0.25, 0.97);
+          animation: slideinright 3s cubic-bezier(1, -0.18, 0.25, 0.97);
+}
+
+.spinner__food {
+  color: #9356DC;
+  font-size: 100px;
+  font-family: "Shrikhand";
+  -webkit-animation: slideinleft 3s cubic-bezier(1, -0.18, 0.25, 0.97);
+          animation: slideinleft 3s cubic-bezier(1, -0.18, 0.25, 0.97);
+}
+
+@-webkit-keyframes slideinleft {
+  .0% {
+    margin-left: 100%;
+  }
+  50% {
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  100% {
+    margin-right: 120%;
+  }
+}
+
+@keyframes slideinleft {
+  .0% {
+    margin-left: 100%;
+  }
+  50% {
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  100% {
+    margin-right: 120%;
+  }
+}
+
+@-webkit-keyframes slideinright {
+  .0% {
+    margin-right: 100%;
+  }
+  50% {
+    margin-right: 0%;
+    margin-left: 0%;
+  }
+  100% {
+    margin-left: 120%;
+  }
+}
+
+@keyframes slideinright {
+  .0% {
+    margin-right: 100%;
+  }
+  50% {
+    margin-right: 0%;
+    margin-left: 0%;
+  }
+  100% {
+    margin-left: 120%;
+  }
 }
 /*# sourceMappingURL=main.css.map */

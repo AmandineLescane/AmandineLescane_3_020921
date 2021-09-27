@@ -1,0 +1,67 @@
+.spinner{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    animation: fadein 3s forwards;
+}
+@keyframes fadein{
+    0%{
+        z-index: 10000;
+    }
+    99%{
+        z-index: 1000;
+        visibility: hidden;
+    }
+    100%{
+        z-index: -1000;
+        visibility: hidden;
+    }
+}
+.spinner__oh{
+    color: $magenta;
+    font-size: 100px;
+    font-family: $font-title;
+    animation: slideinleft 3s cubic-bezier(1,-0.18, 0.25, 0.97);
+}
+.spinner__my{
+    color: $mint;
+    font-size: 100px;
+    font-family: $font-title;
+    animation: slideinright 3s cubic-bezier(1,-0.18, 0.25, 0.97);
+}
+.spinner__food{
+    color: $purple;
+    font-size: 100px;
+    font-family: $font-title;
+    animation: slideinleft 3s cubic-bezier(1,-0.18, 0.25, 0.97);
+}
+
+@keyframes slideinleft {
+    .0%{
+        margin-left: 100%;
+    }
+    50%{
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    100%{
+        margin-right: 120%;
+    }
+}
+@keyframes slideinright{
+    .0%{
+        margin-right: 100%;
+    }
+    50%{
+        margin-right: 0%;
+        margin-left: 0%;
+    }
+    100%{
+        margin-left: 120%;
+    }
+}
