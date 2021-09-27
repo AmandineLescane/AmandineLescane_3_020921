@@ -50,6 +50,7 @@ p{
     padding: 15px;
     margin-bottom: 15px;
     box-shadow: 2px 2px 10px darken($grey, $amount: 10);
+    animation: $menuanimation;
     .starters__byline{
         display: flex;
         justify-content: space-between;
@@ -64,6 +65,7 @@ p{
     padding: 15px;
     margin-bottom: 15px;
     box-shadow: 2px 2px 10px darken($grey, $amount: 10);
+    animation: $menuanimation;
     .maindishes__byline{
         display: flex;
         justify-content: space-between;
@@ -78,6 +80,7 @@ p{
     padding: 15px;
     margin-bottom: 15px;
     box-shadow: 2px 2px 10px darken($grey, $amount: 10);
+    animation: $menuanimation;
     .desserts__byline{
         display: flex;
         justify-content: space-between;
@@ -96,4 +99,42 @@ p{
 .restaurant__heart{
     margin-top: 20px;
     right: 50px;
+}
+.dish1{
+    animation-delay: 0.1s;
+}
+.dish2{
+    animation-delay: 0.2s;
+}
+.dish3{
+    animation-delay: 0.3s;
+}
+.dish4{
+    animation-delay: 0.4s;
+}
+.dish5{
+    animation-delay: 0.5s;
+}
+.dish6{
+    animation-delay: 0.6s;
+}   
+.dish7{
+    animation-delay: 0.7s;
+}
+.dish8{
+    animation-delay: 0.8s;
+}
+.dish9{
+    animation-delay: 0.9s;
+}
+.dish10{
+    animation-delay: 1s;
+}
+@keyframes menuslide{
+    0%{
+        transform: translatex(-1000px);
+    }
+    100%{
+        transform: translatex(0px);
+    }
 }
