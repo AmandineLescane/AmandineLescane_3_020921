@@ -1,8 +1,12 @@
 main{
-    display: flex;
-    flex-direction: column;
     background-color: $grey;
     padding: 20px;
+}
+.restaurants__container{
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
 }
 .restaurants{
     display: flex;
@@ -73,5 +77,6 @@ main{
         background: linear-gradient($magenta, $purple);
         -webkit-background: content-box;
         -webkit-background-clip: text;
+        background-clip:text;
     }    
 }

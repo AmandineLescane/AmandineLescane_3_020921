@@ -1,5 +1,7 @@
 aside{
     padding: 25px;
+    max-width: 1400px;
+    margin: auto;
 }
 .tuto{
     display: flex;
@@ -24,7 +26,7 @@ aside{
     margin: 0px;
     cursor: pointer;
     &:hover{
-        color: $purple;
+        background-color: lighten($mint, $amount: 20);
     }
     .fas{
         margin-right: 30px;
