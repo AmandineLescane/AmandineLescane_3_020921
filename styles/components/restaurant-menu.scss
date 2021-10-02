@@ -60,11 +60,17 @@ h4{
     white-space: nowrap;
     text-overflow: ellipsis;
 }
+.dishes__title{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
 p{
     margin: 0px 0px 5px 0px;
     font-weight: 300;
     white-space: nowrap;
     text-overflow: ellipsis;
+    overflow: hidden;
 }
 .starters__dishes{
     background-color: white;
