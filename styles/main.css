@@ -319,6 +319,11 @@ footer p {
   padding-bottom: 10px;
 }
 
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
 .footer__byline {
   display: -webkit-box;
   display: -ms-flexbox;
