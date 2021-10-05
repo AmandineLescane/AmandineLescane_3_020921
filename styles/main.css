@@ -69,6 +69,7 @@ input::-webkit-input-placeholder {
 .search-input__text p {
   color: #333333;
   font-weight: 300;
+  white-space: normal;
 }
 
 .search-button {
@@ -488,8 +489,8 @@ p {
 }
 
 .starters__dishes:hover .fa-check-circle {
-  -webkit-transform: rotate(-360deg);
-          transform: rotate(-360deg);
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
   -webkit-transition: ease-in-out 0.6s;
   transition: ease-in-out 0.6s;
 }
@@ -530,8 +531,8 @@ p {
 }
 
 .maindishes__dishes:hover .fa-check-circle {
-  -webkit-transform: rotate(-360deg);
-          transform: rotate(-360deg);
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
   -webkit-transition: ease-in-out 0.6s;
   transition: ease-in-out 0.6s;
 }
@@ -572,8 +573,8 @@ p {
 }
 
 .desserts__dishes:hover .fa-check-circle {
-  -webkit-transform: rotate(-360deg);
-          transform: rotate(-360deg);
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
   -webkit-transition: ease-in-out 0.6s;
   transition: ease-in-out 0.6s;
 }
@@ -685,8 +686,6 @@ p {
 .fa-check-circle {
   color: white;
   font-size: 20px;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
 }
 
 .checkbox {
